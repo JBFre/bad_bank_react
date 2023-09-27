@@ -90,39 +90,39 @@ function CreateAccount() {
       status={status}
       body={show ? (
         <>
-          Name<br /><input 
-            type="input" 
-            className="form-control" 
-            id="name" 
-            placeholder="Enter name" 
-            value={name} 
-            onChange={e => setName(e.currentTarget.value)} 
+          Name<br /><input
+            type="input"
+            className="form-control"
+            id="name"
+            placeholder="Enter name"
+            value={name}
+            onChange={e => setName(e.currentTarget.value)}
             onBlur={checkCreateAccountFields} /><br />
-          
-          Email address<br /><input 
-            type="input" 
-            className="form-control" 
-            id="email" 
-            placeholder="Enter email" 
-            value={email} 
-            onChange={e => setEmail(e.currentTarget.value.trim())} 
+
+          Email address<br /><input
+            type="input"
+            className="form-control"
+            id="email"
+            placeholder="Enter email"
+            value={email}
+            onChange={e => setEmail(e.currentTarget.value.trim())}
             onBlur={checkCreateAccountFields} /><br />
-          
-          Password<br /><input 
-            type="password" 
-            className="form-control" 
-            id="password" 
-            placeholder="Enter password" 
-            value={password} 
-            onChange={e => setPassword(e.currentTarget.value.trim())} 
+
+          Password<br /><input
+            type="password"
+            className="form-control"
+            id="password"
+            placeholder="Enter password"
+            value={password}
+            onChange={e => setPassword(e.currentTarget.value.trim())}
             onBlur={checkCreateAccountFields} /><br />
           <button type="submit" className="btn btn-light" disabled={!button} onClick={handleCreate}>Create Account</button>
         </>
       ) : (
         <>
-          <h5>Success</h5><button 
-            type="submit" 
-            className="btn btn-light" 
+          <h5>Success</h5><button
+            type="submit"
+            className="btn btn-light"
             onClick={clearForm}>Add another account</button>
         </>
       )}
